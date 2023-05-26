@@ -3,17 +3,14 @@
 
 /* GOLBAL */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Oxanium", cursive;
   overflow: hidden;
-
 }
 
 /* FUNDO DA PAGINA */
 body {
-  background: linear-gradient(to bottom, #ffffff, #c4eaf8);
+    background: linear-gradient(to bottom, #ffffff, #c4eaf8);
 }
 
 /* TITULO POKEDEX */
@@ -25,29 +22,7 @@ body {
 
 /* LINHA - ESPAÇO PAGINA */
 .poke-row {
-  object-position: center;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  justify-self: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
   height: 100vh;
-  bottom: 50%;
-  left: 50%;
-}
-
-/* CONTAINER */
-.poke-container {
-  object-position: center;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  justify-self: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
 }
 
 main {
@@ -113,12 +88,11 @@ main {
   left: 50%;
   width: 65%;
   transform: translate(-57%, 0);
-  display: flex;
   gap: 20px;
 }
 
 .button {
-  width: 50%;
+  width: 45%;
   padding: 2%;
   border: 2px solid #000;
   border-radius: 5px;
