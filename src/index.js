@@ -2,12 +2,14 @@
 const pokemonName = document.querySelector(".pokemon__name"); // NOME DO POKEMON QUE SERA PASSADO PELA API;
 const pokemonNumber = document.querySelector(".pokemon__number"); // NUMERO DO POKEMON QUE SERA PASSADO PELA API;
 const pokemonImage = document.querySelector(".pokemon__image"); // IMAGEM DO POKEMON QUE SERA PASSADO PELA API;
+const pokemonType = document.querySelector(".pokemon__type"); // TIPO DO POKEMON QUE SERA PASSADO PELA API;
 //
 // VARIAVEIS DO HTML;
 const form = document.querySelector(".form");
 const input = document.querySelector(".input__search");
 const buttonPrev = document.querySelector(".btn-prev");
 const buttonNext = document.querySelector(".btn-next");
+const buttonInfo = document.querySelector(".btn-infor")
 //
 // VARIAVEL DE REFERENCIA DO ID DO POKEMON:
 let searchPokemon = 1;
@@ -70,3 +72,10 @@ buttonNext.addEventListener("click", () => {
 });
 //CHAMADA PRINCIPAL
 renderPokemon(searchPokemon);
+
+//FUNÇÃO do botão INFO, mostra na tela as info do pokemon
+buttonInfo.addEventListener("click", () => {
+  
+
+});
+

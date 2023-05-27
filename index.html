@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,67 +17,52 @@
     <script defer src="./src/index.js"></script>
 
     <!-- Bootstrap CSS & JS-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
     <title>Pokédex</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- AJUSTANDO PARA LINHA BOOTSTRAP -->
-    <div
-      class="poke-row row flex-row d-flex align-items-start justify-content-center m-0 p-0 text-center"
-    >
-    <!-- CONTAINER BOOTSTRAP -->
-    <div
-    class="poke-container col-xxl-6 col-xl-6 col-md-8 col-sm-9 col-xs-10 m-0 p-0 justify-content-center text-center"
-    >
-    <main>
-        <!-- TITULO DA POKEDEX -->
-        <h1 class="titulo text-center p-0 m-0">Pokédex</h1>
-        
-        <!-- IMAGEM DA POKÉDEX -->
-        <img src="./src/pokedex.png" alt="pokedex" class="pokedex p-0 m-0" />
-        
-          <!-- IMAGEM DO POKEMON QUE SERÁ INFORMADA PELA API -->
-          <img
-            src="#"
-            alt="sem registro"
-            class="pokemon__image text-danger text-uppercase p-0 m-0"
-          />
-
-          <output type="output" class="pokemon__data p-0 m-0 text-end">
-            <!-- NOME E NUMERO DO POKEMON QUE SERÁ INFORMADO PELA API-->
-            <span class="pokemon__number text-end fs-5"></span> -
-            <span class="pokemon__name text-end fs-5"></span>
-          </output>
-
-          <form class="form">
-            <!-- NOME OU NUMERO DO POKEMON QUE SERÁ BUSCADO NA API-->
-            <input
-              type="search"
-              class="input input__search"
-              placeholder="Buscar número ou nome"
-              required
-            />
-          </form>
-
-          <div class="btn buttons d-flex">
-            <!-- SELETOR ANTERIOR E PROXIMO ID DA API-->
-            <button class="button btn-prev fst-italic">&lt; Anterior</button>
-            <button class="button btn-next fst-italic">Próximo &gt;</button>
-          </div>
-        </main>
-      </div>
+    <div class="poke-row row flex-row d-flex align-items-start justify-content-center m-0 p-0 text-center">
+        <!-- CONTAINER BOOTSTRAP -->
+        <div
+            class="poke-container col-xxl-6 col-xl-6 col-md-8 col-sm-9 col-xs-10 m-0 p-0 justify-content-center text-center">
+            <main>
+                <!-- TITULO DA POKEDEX -->
+                <h1 class="titulo text-center p-0 m-0">Pokédex</h1>
+                
+                <!-- IMAGEM DA POKÉDEX -->
+                <img src="./src/pokedex.png" alt="pokedex" class="pokedex p-0 m-0" />
+                
+                <!-- IMAGEM DO POKEMON QUE SERÁ INFORMADA PELA API -->
+                <img src="#" alt="sem registro" class="pokemon__image text-danger text-uppercase p-0 m-0" />
+                
+                <output type="output" class="pokemon__data p-0 m-0 text-end">
+                    <!-- NOME E NUMERO DO POKEMON QUE SERÁ INFORMADO PELA API-->
+                    <span class="pokemon__number text-end"></span> -
+                    <span class="pokemon__name text-end"></span>
+                </output>
+                
+                <form class="form">
+                    <!-- NOME OU NUMERO DO POKEMON QUE SERÁ BUSCADO NA API-->
+                    <input type="search " class="input__search" placeholder="Buscar número ou nome" required />
+                </form>
+                <div class="buttons-info">
+                    <button class="button btn-infor">Info</button>
+                </div>
+                <div class="buttons">
+                    <!-- SELETOR ANTERIOR E PROXIMO ID DA API-->
+                    <button class="button btn-prev">&lt; Anterior</button>
+                    <button class="button btn-next">Próximo &gt;</button>
+                </div>
+            </main>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>

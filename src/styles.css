@@ -10,7 +10,7 @@
 
 /* FUNDO DA PAGINA */
 body {
-    background: linear-gradient(to bottom, #ffffff, #c4eaf8);
+  background: linear-gradient(to bottom, #ffffff, #c4eaf8);
 }
 
 /* TITULO POKEDEX */
@@ -18,6 +18,7 @@ body {
   font-weight: 900;
   font-style: italic;
   font-variant: small-caps;
+  font-size: clamp(35px, 8vw, 1rem);
 }
 
 /* LINHA - ESPAÇO PAGINA */
@@ -28,6 +29,7 @@ body {
 main {
   display: inline-block;
   position: relative;
+  padding: 8px;
 }
 
 /*  IMAGEM POKÉDEX*/
@@ -42,7 +44,7 @@ main {
   bottom: 50%;
   left: 50%;
   transform: translate(-63%, 20%);
-  height: 18%;
+  height: 15%;
   font-weight: 800;
   text-shadow: 1px 1px #000, 2px 2px white;
 }
@@ -50,15 +52,12 @@ main {
 /* NOME E NUMERO DO POKEMON */
 .pokemon__data {
   position: absolute;
-  color: #aaa;
   top: 58%;
   right: 23%;
   color: #3a444d;
   font-weight: 600;
-  color: #3a444d;
-  font-size: clamp(6px, 2vw, 20px);
+  font-size: clamp(8px, 5vw, 25px);
   text-transform: capitalize;
-  font-size: medium;
 }
 
 /* BUSCADOR  */
@@ -67,9 +66,11 @@ main {
   width: 65%;
   top: 70%;
   left: 13%;
+  display: flex;
 }
 
 .input__search {
+  display: flex;
   width: 100%;
   padding: 4%;
   outline: none;
@@ -77,27 +78,28 @@ main {
   border-radius: 5px;
   font-weight: 600;
   color: #3a444d;
-  font-size: clamp(6px, 4vw, 0.95rem);
+  font-size: clamp(6px, 4vw, 1rem);
   box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
 }
 
-/* BOTÕES NEXT E PREV */
+/* BOTÕES NEXT, PREV, INFO */
 .buttons {
   position: absolute;
-  bottom: 10%;
+  bottom: 6%;
   left: 50%;
   width: 65%;
   transform: translate(-57%, 0);
   gap: 20px;
+  display: flex;
 }
 
 .button {
-  width: 45%;
+  width: 50%;
   padding: 2%;
   border: 2px solid #000;
   border-radius: 5px;
-  font-size: small;
-  font-weight: 700;
+  font-size: clamp(6px, 4vw, 1rem);
+  font-weight: 600;
   color: white;
   background-color: #444;
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
@@ -106,4 +108,13 @@ main {
 .button:active {
   box-shadow: inset -4px 4px 0 #222;
   font-size: 0.9rem;
+}
+
+.buttons-info{
+  position: absolute;
+  bottom: 14%;
+  left: 50%;
+  width: 50%;
+  display: flex;
+  transform: translate(-35%, 0);
 }
