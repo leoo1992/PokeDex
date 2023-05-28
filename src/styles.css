@@ -48,6 +48,15 @@ main {
   font-weight: 800;
   text-shadow: 1px 1px #000, 2px 2px white;
 }
+.modalPokemon__image {
+  position: absolute;
+  bottom: 35%;
+  left: 85%;
+  transform: translate(-63%, 20%);
+  height: 60%;
+  font-weight: 800;
+  text-shadow: 1px 1px #000, 2px 2px white;
+}
 
 /* NOME E NUMERO DO POKEMON */
 .pokemon__data {
@@ -93,7 +102,7 @@ main {
   display: flex;
 }
 
-.button {
+.button, .modal-btn {
   width: 50%;
   padding: 2%;
   border: 2px solid #000;
@@ -105,7 +114,7 @@ main {
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
 
-.button:active {
+.button:active, .modal-btn:active {
   box-shadow: inset -4px 4px 0 #222;
   font-size: 0.9rem;
 }

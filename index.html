@@ -35,30 +35,58 @@
             <main>
                 <!-- TITULO DA POKEDEX -->
                 <h1 class="titulo text-center p-0 m-0">Pokédex</h1>
-                
+
                 <!-- IMAGEM DA POKÉDEX -->
                 <img src="./src/pokedex.png" alt="pokedex" class="pokedex p-0 m-0" />
-                
+
                 <!-- IMAGEM DO POKEMON QUE SERÁ INFORMADA PELA API -->
                 <img src="#" alt="sem registro" class="pokemon__image text-danger text-uppercase p-0 m-0" />
-                
+
                 <output type="output" class="pokemon__data p-0 m-0 text-end">
                     <!-- NOME E NUMERO DO POKEMON QUE SERÁ INFORMADO PELA API-->
                     <span class="pokemon__number text-end"></span> -
                     <span class="pokemon__name text-end"></span>
                 </output>
-                
+
                 <form class="form">
                     <!-- NOME OU NUMERO DO POKEMON QUE SERÁ BUSCADO NA API-->
                     <input type="search " class="input__search" placeholder="Buscar número ou nome" required />
                 </form>
                 <div class="buttons-info">
+                    <!-- BOTÃO INFO DO ID DO POKEMON DA API -->
                     <button class="button btn-infor">Info</button>
                 </div>
                 <div class="buttons">
                     <!-- SELETOR ANTERIOR E PROXIMO ID DA API-->
                     <button class="button btn-prev">&lt; Anterior</button>
                     <button class="button btn-next">Próximo &gt;</button>
+                </div>
+                <!-- MODAL PARA EXIBIÇÃO DA INFO DO POKEMON -->
+                <div id="modal-infos" class="modal fade" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-header bg-danger text-white border border-danger">
+                                <span class="modalPokemon__number"></span> -
+                                <span class="modalPokemon__name"></span>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                    
+                            </div>
+                            <div class="modal-body text-start bg-black text-white border border-danger">
+                                <img src="#" alt="sem registro" class="modalPokemon__image text-danger text-uppercase p-0 m-0" />
+                                <span>Tipo: </span><span class="modalPokemon__type"></span><br>
+                                <span>Experiencia base: </span><span class="modalPokemon__exp"></span><br>
+                                <span>Altura: </span><span class="modalPokemon__altura"></span><br>
+                                <span>Peso: </span><span class="modalPokemon__peso"></span><br>
+                            </div>
+                            
+                            <div class="modal-footer bg-black text-white border border-danger">
+                                
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
